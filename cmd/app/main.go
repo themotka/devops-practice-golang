@@ -6,7 +6,6 @@ import (
 )
 
 func handler(w http.ResponseWriter, _ *http.Request) {
-
 	_, err := fmt.Fprintf(w, "Sample local server %d", addition(1, 0))
 	if err != nil {
 		return
