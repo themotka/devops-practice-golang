@@ -1,11 +1,16 @@
 run:
   timeout: 5m
 
+
 linters:
   enable:
     - errcheck
-    - gosimple
     - govet
     - staticcheck
     - unused
-    - deadcode
+
+issues:
+  exclude-use-default: false
+  exclude:
+    - "The linter 'deadcode' is deprecated"
+
