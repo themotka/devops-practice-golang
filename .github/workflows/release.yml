@@ -1,4 +1,4 @@
-name: Create Release
+name: release
 
 on:
   push:
@@ -44,3 +44,5 @@ jobs:
           asset_path: ./main
           asset_name: main
           asset_content_type: application/octet-stream
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
